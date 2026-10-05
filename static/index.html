@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carty — Loan Eligibility</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <nav class="nav">
+      <a href="#" class="logo">carty<span class="dot"></span></a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#apply">Check Eligibility</a></li>
+        <li><a href="#faq">Faq</a></li>
+      </ul>
+      <a href="#apply" class="btn btn-dark">Get Started</a>
+    </nav>
+
+    <div class="hero-top">
+      <h1>Know your <br />loan status <br />in seconds</h1>
+      <div class="hero-side">
+        <p>Credit decisions should be easy. Share a few details and our risk model will tell you instantly where you stand.</p>
+        <div class="hero-actions">
+          <a href="#apply" class="btn btn-lime">Check Now</a>
+          <a href="#features" class="btn-round" aria-label="Learn more">▶</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="award">
+        <span class="award-icon">🛡</span>
+        <span><b>2022</b> The world's <br />best digital banks</span>
+      </div>
+
+      <div class="cards">
+        <div class="card card-left"><span>carty</span><i>)))</i></div>
+        <div class="card card-mid"><span>carty</span><i>)))</i><em class="chip"></em></div>
+        <div class="card card-right"><span>carty</span><i>)))</i><em class="chip"></em></div>
+      </div>
+
+      <div class="users">
+        <div class="avatars"><b></b><b></b><b></b><strong>12M</strong></div>
+        <small><span class="live"></span>World active user</small>
+      </div>
+    </div>
+
+    <a href="#apply" class="explore" aria-label="Explore more">
+      <svg viewBox="0 0 120 120">
+        <defs><path id="circle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
+        <text><textPath href="#circle">EXPLORE MORE • EXPLORE MORE •</textPath></text>
+      </svg>
+      <span class="arrow">▼</span>
+    </a>
+  </header>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="section" id="features">
+    <span class="bg-num">01</span>
+    <div class="feat-grid">
+      <div class="feat-text reveal">
+        <small>Features</small>
+        <h2>Best features <br />provided by carty</h2>
+        <p>Carty is more of a mindset than technology or industry, our product is designed by industry veterans to solve these problems. It will save you time, money, and heartache.</p>
+        <div class="row">
+          <a href="#apply" class="btn btn-black">Get Started</a>
+          <a href="#about" class="link">Learn More</a>
+        </div>
+      </div>
+      <div class="feat-cards">
+        <div class="feat reveal"><small>Protection</small><div class="ico">⬡</div><p>Data protection guaranteed</p></div>
+        <div class="feat feat-active reveal"><small>Tracking</small><div class="ico wave">〜</div><p>Track all your financial transactions</p></div>
+        <div class="feat reveal"><small>Flexibility</small><div class="ico">✦</div><p>Delivery through multiple channels</p></div>
+        <div class="feat reveal"><small>Easiness</small><div class="ico">♡</div><p>Feel free to transact anywhere, anytime</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT / STATS ================= -->
+  <section class="section" id="about">
+    <span class="bg-num">02</span>
+    <div class="head reveal">
+      <div><small>About Us</small><h2>Get to know more <br />about carty</h2></div>
+      <p>We are customer-focused digital bank that provides complete financial solutions to meet your entire financial needs</p>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><h3 data-count="243" data-suffix="K">0</h3><p>Carty's users from all over the globe</p></div>
+      <div class="stat reveal"><h3 data-count="489" data-prefix="" data-suffix="M">0</h3><p>Carty's revenue in 2022 in the first quarter</p></div>
+      <div class="stat stat-active reveal"><h3 data-count="267" data-suffix="%">0</h3><p>Carty's investment growth in 2022</p></div>
+    </div>
+  </section>
+
+  <!-- ================= APPLY (FORM) ================= -->
+  <section class="dark-panel" id="apply">
+    <span class="bg-num light">03</span>
+    <div class="apply-head reveal">
+      <h2>Check your loan <br />eligibility</h2>
+      <p>Fill in your details below. Your information is only used to generate a prediction.</p>
+    </div>
+
+    <form id="loanForm" class="form" novalidate>
+      <div class="field"><label for="person_age">Age</label>
+        <input type="number" id="person_age" min="18" max="100" required placeholder="e.g. 28" /></div>
+
+      <div class="field"><label for="person_income">Annual income ($)</label>
+        <input type="number" id="person_income" min="1" step="any" required placeholder="e.g. 55000" /></div>
+
+      <div class="field"><label for="person_home_ownership">Home ownership</label>
+        <select id="person_home_ownership" required>
+          <option value="">Select…</option>
+          <option value="RENT">Rent</option>
+          <option value="OWN">Own</option>
+          <option value="MORTGAGE">Mortgage</option>
+          <option value="OTHER">Other</option>
+        </select></div>
+
+      <div class="field"><label for="person_emp_length">Employment length (years)</label>
+        <input type="number" id="person_emp_length" min="0" step="any" required placeholder="e.g. 4" /></div>
+
+      <div class="field"><label for="loan_intent">Loan purpose</label>
+        <select id="loan_intent" required>
+          <option value="">Select…</option>
+          <option value="PERSONAL">Personal</option>
+          <option value="EDUCATION">Education</option>
+          <option value="MEDICAL">Medical</option>
+          <option value="VENTURE">Venture</option>
+          <option value="HOMEIMPROVEMENT">Home improvement</option>
+          <option value="DEBTCONSOLIDATION">Debt consolidation</option>
+        </select></div>
+
+      <div class="field"><label for="loan_grade">Loan grade</label>
+        <select id="loan_grade" required>
+          <option value="">Select…</option>
+          <option>A</option><option>B</option><option>C</option><option>D</option>
+          <option>E</option><option>F</option><option>G</option>
+        </select></div>
+
+      <div class="field"><label for="loan_amnt">Loan amount ($)</label>
+        <input type="number" id="loan_amnt" min="1" step="any" required placeholder="e.g. 10000" /></div>
+
+      <div class="field"><label for="loan_int_rate">Interest rate (%)</label>
+        <input type="number" id="loan_int_rate" min="0" step="any" required placeholder="e.g. 11.5" /></div>
+
+      <div class="field"><label for="loan_percent_income">Loan % of income <em>(auto)</em></label>
+        <input type="number" id="loan_percent_income" step="any" readonly placeholder="Calculated" /></div>
+
+      <div class="field"><label for="cb_person_default_on_file">Previous default on file?</label>
+        <select id="cb_person_default_on_file" required>
+          <option value="">Select…</option>
+          <option value="N">No</option>
+          <option value="Y">Yes</option>
+        </select></div>
+
+      <div class="field"><label for="cb_person_cred_hist_length">Credit history (years)</label>
+        <input type="number" id="cb_person_cred_hist_length" min="0" required placeholder="e.g. 5" /></div>
+
+      <div class="form-foot">
+        <p id="formError" class="error" role="alert"></p>
+        <button type="submit" class="btn btn-lime" id="submitBtn">
+          <span class="btn-label">Check My Eligibility</span>
+          <span class="spinner" hidden></span>
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <span class="bg-num">04</span>
+    <div class="head reveal">
+      <div><small>Strategy</small><h2>Let's learn how <br />carty works</h2></div>
+      <p>Your journey is seamless, safe and secure. No need to register or download apps. No need to enter card details.</p>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>How is my eligibility decided?</summary><p>A machine-learning credit-risk model estimates the probability of default from your details and compares it with a tuned risk threshold.</p></details>
+      <details class="reveal"><summary>Does this affect my credit score?</summary><p>No. This is only an indicative prediction and does not create a hard inquiry.</p></details>
+      <details class="reveal"><summary>What if I'm not approved instantly?</summary><p>Visit your nearest branch — the bank may need extra documentation and information to review your application manually.</p></details>
+    </div>
+  </section>
+
+  <!-- ================= CTA / FOOTER ================= -->
+  <footer class="cta">
+    <h2>Connect your finances <br />with Carty</h2>
+    <a href="#apply" class="btn btn-lime">Join Carty Now</a>
+    <a href="#" class="logo foot-logo">carty<span class="dot"></span></a>
+    <div class="foot-row">
+      <a href="#">Terms &amp; Agreements</a>
+      <span>©2022 Carty All Rights Reserved</span>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <!-- ================= RESULT MODAL ================= -->
+  <div class="modal" id="resultModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+
+      <div id="approvedView" hidden>
+        <div class="badge badge-ok">✓</div>
+        <h3>You're approved!</h3>
+        <p>Great news — based on your details, your loan application looks <b>low risk</b> and has been approved.</p>
+        <div class="meter"><span id="okMeter"></span></div>
+        <small class="meter-label" id="okLabel"></small>
+        <button class="btn btn-lime" data-close>Done</button>
+      </div>
+
+      <div id="reviewView" hidden>
+        <div class="badge badge-warn">!</div>
+        <h3>More information needed</h3>
+        <p>We couldn't approve your application instantly. The bank needs <b>extra documentation and information</b> to review your case. Please visit your nearest branch with your ID, proof of income and employment details.</p>
+        <div class="meter warn"><span id="warnMeter"></span></div>
+        <small class="meter-label" id="warnLabel"></small>
+        <a id="branchBtn" class="btn btn-lime" href="https://www.google.com/maps/search/bank+near+me" target="_blank" rel="noopener">Find nearest bank branch</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
