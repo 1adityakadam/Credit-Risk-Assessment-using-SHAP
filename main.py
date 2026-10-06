@@ -6,6 +6,7 @@ import pandas as pd
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 BASE_DIR = Path(__file__).parent
 
@@ -59,4 +60,4 @@ def predict(data: LoanApplication):
         "result": "High Risk" if prediction == 1 else "Low Risk",
     }
 
-app.mount('/', StaticFiles(directory='static, html=True'), name='static')
+app.mount("/", StaticFiles(directory=BASE_DIR / "static", html=True), name="static")
