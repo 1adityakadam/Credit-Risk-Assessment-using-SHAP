@@ -1,4 +1,4 @@
-# Credit Risk Assessment with XGBoost and SHAP
+# Credit Risk Assessment with XGBoost, SHAP & MLFlow
 
 Predicts whether a loan applicant will default, explains why, and serves the result through a live web app.
 
