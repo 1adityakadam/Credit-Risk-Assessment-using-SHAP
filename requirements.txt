@@ -5,6 +5,6 @@ pandas==2.3.3
 numpy==2.3.5
 joblib==1.5.2
 scikit-learn==1.6.1
-xgboost==3.4.1
+xgboost==3.2.0
 scipy
 python-dotenv
