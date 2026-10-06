@@ -178,3 +178,21 @@ function countUp(el) {
     if (t < 1) requestAnimationFrame(tick);
   })(start);
 }
+
+
+// ====== SMOOTH SCROLL NAV + ACTIVE LINK ======
+const navLinks = document.querySelectorAll("[data-nav]");
+document.querySelectorAll('a[href^="#"]').forEach((a) => {
+  a.addEventListener("click", (e) => {
+    const target = document.querySelector(a.getAttribute("href"));
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});
+const navIO = new IntersectionObserver((entries) => {
+  entries.forEach((en) => {
+    if (en.isIntersecting) navLinks.forEach((a) => a.classList.toggle("active", a.dataset.nav === en.target.id));
+  });
+}, { rootMargin: "-45% 0px -45% 0px" });
+["home", "apply", "info"].forEach((id) => navIO.observe(document.getElementById(id)));

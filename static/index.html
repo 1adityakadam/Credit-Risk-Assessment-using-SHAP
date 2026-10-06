@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carty — Loan Eligibility</title>
+  <title>cardloans</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231f7ae0'/%3E%3Ctext x='32' y='44' font-size='38' font-family='Arial,sans-serif' font-weight='700' text-anchor='middle' fill='%23fff'%3E$%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -11,40 +12,40 @@
 </head>
 <body>
 
-  <!-- ================= HERO ================= -->
-  <header class="hero">
-    <nav class="nav">
-      <a href="#" class="logo">carty<span class="dot"></span></a>
-      <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#apply">Check Eligibility</a></li>
-        <li><a href="#faq">Faq</a></li>
-      </ul>
-      <a href="#apply" class="btn btn-dark">Get Started</a>
-    </nav>
+  <!-- ================= SHARED NAV ================= -->
+  <nav class="nav topbar">
+    <a href="#home" class="logo">cardloans<span class="dot"></span></a>
+    <ul class="nav-links">
+      <li><a href="#home" data-nav="home">Home</a></li>
+      <li><a href="#apply" data-nav="apply">Check Eligibility</a></li>
+      <li><a href="#info" data-nav="info">About &amp; FAQ</a></li>
+    </ul>
+    <a href="#apply" class="btn btn-dark">Get Started</a>
+  </nav>
 
+  <!-- ================= PAGE 1: HOME ================= -->
+  <main class="page" id="home">
+  <header class="hero">
     <div class="hero-top">
       <h1>Know your <br />loan status <br />in seconds</h1>
       <div class="hero-side">
         <p>Credit decisions should be easy. Share a few details and our risk model will tell you instantly where you stand.</p>
         <div class="hero-actions">
           <a href="#apply" class="btn btn-lime">Check Now</a>
-          <a href="#features" class="btn-round" aria-label="Learn more">▶</a>
+          <a href="#info" class="btn-round" aria-label="Learn more">▶</a>
         </div>
       </div>
     </div>
 
     <div class="hero-bottom">
       <div class="award">
-        <span class="award-icon">🛡</span>
         <span><b>2022</b> The world's <br />best digital banks</span>
       </div>
 
       <div class="cards">
-        <div class="card card-left"><span>carty</span><i>)))</i></div>
-        <div class="card card-mid"><span>carty</span><i>)))</i><em class="chip"></em></div>
-        <div class="card card-right"><span>carty</span><i>)))</i><em class="chip"></em></div>
+        <div class="card card-left"><span>cardloans</span><i>)))</i></div>
+        <div class="card card-mid"><span>cardloans</span><i>)))</i></div>
+        <div class="card card-right"><span>cardloans</span><i>)))</i></div>
       </div>
 
       <div class="users">
@@ -61,46 +62,11 @@
       <span class="arrow">▼</span>
     </a>
   </header>
-
-  <!-- ================= FEATURES ================= -->
-  <section class="section" id="features">
-    <span class="bg-num">01</span>
-    <div class="feat-grid">
-      <div class="feat-text reveal">
-        <small>Features</small>
-        <h2>Best features <br />provided by carty</h2>
-        <p>Carty is more of a mindset than technology or industry, our product is designed by industry veterans to solve these problems. It will save you time, money, and heartache.</p>
-        <div class="row">
-          <a href="#apply" class="btn btn-black">Get Started</a>
-          <a href="#about" class="link">Learn More</a>
-        </div>
-      </div>
-      <div class="feat-cards">
-        <div class="feat reveal"><small>Protection</small><div class="ico">⬡</div><p>Data protection guaranteed</p></div>
-        <div class="feat feat-active reveal"><small>Tracking</small><div class="ico wave">〜</div><p>Track all your financial transactions</p></div>
-        <div class="feat reveal"><small>Flexibility</small><div class="ico">✦</div><p>Delivery through multiple channels</p></div>
-        <div class="feat reveal"><small>Easiness</small><div class="ico">♡</div><p>Feel free to transact anywhere, anytime</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= ABOUT / STATS ================= -->
-  <section class="section" id="about">
-    <span class="bg-num">02</span>
-    <div class="head reveal">
-      <div><small>About Us</small><h2>Get to know more <br />about carty</h2></div>
-      <p>We are customer-focused digital bank that provides complete financial solutions to meet your entire financial needs</p>
-    </div>
-    <div class="stats">
-      <div class="stat reveal"><h3 data-count="243" data-suffix="K">0</h3><p>Carty's users from all over the globe</p></div>
-      <div class="stat reveal"><h3 data-count="489" data-prefix="" data-suffix="M">0</h3><p>Carty's revenue in 2022 in the first quarter</p></div>
-      <div class="stat stat-active reveal"><h3 data-count="267" data-suffix="%">0</h3><p>Carty's investment growth in 2022</p></div>
-    </div>
-  </section>
+  </main>
 
   <!-- ================= APPLY (FORM) ================= -->
-  <section class="dark-panel" id="apply">
-    <span class="bg-num light">03</span>
+  <main class="page" id="apply">
+  <section class="dark-panel">
     <div class="apply-head reveal">
       <h2>Check your loan <br />eligibility</h2>
       <p>Fill in your details below. Your information is only used to generate a prediction.</p>
@@ -171,12 +137,48 @@
       </div>
     </form>
   </section>
+  </main>
+
+  <!-- ================= PAGE 3: INFO ================= -->
+  <main class="page" id="info">
+  <!-- ================= FEATURES ================= -->
+  <section class="section" id="features">
+    <div class="feat-grid">
+      <div class="feat-text reveal">
+        <small>Features</small>
+        <h2>Best features <br />provided by cardloans</h2>
+        <p>cardloans is more of a mindset than technology or industry, our product is designed by industry veterans to solve these problems. It will save you time, money, and heartache.</p>
+        <div class="row">
+          <a href="#apply" class="btn btn-black">Get Started</a>
+          <a href="#info" class="link">Learn More</a>
+        </div>
+      </div>
+      <div class="feat-cards">
+        <div class="feat reveal"><small>Protection</small><div class="ico">⬡</div><p>Data protection guaranteed</p></div>
+        <div class="feat feat-active reveal"><small>Tracking</small><div class="ico wave">〜</div><p>Track all your financial transactions</p></div>
+        <div class="feat reveal"><small>Flexibility</small><div class="ico">✦</div><p>Delivery through multiple channels</p></div>
+        <div class="feat reveal"><small>Easiness</small><div class="ico">♡</div><p>Feel free to transact anywhere, anytime</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT / STATS ================= -->
+  <section class="section" id="about">
+    <div class="head reveal">
+      <div><small>About Us</small><h2>Get to know more <br />about cardloans</h2></div>
+      <p>We are customer-focused digital bank that provides complete financial solutions to meet your entire financial needs</p>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><h3 data-count="243" data-suffix="K">0</h3><p>cardloans' users from all over the globe</p></div>
+      <div class="stat reveal"><h3 data-count="489" data-prefix="" data-suffix="M">0</h3><p>cardloans' revenue in 2022 in the first quarter</p></div>
+      <div class="stat stat-active reveal"><h3 data-count="267" data-suffix="%">0</h3><p>cardloans' investment growth in 2022</p></div>
+    </div>
+  </section>
 
   <!-- ================= FAQ ================= -->
   <section class="section" id="faq">
-    <span class="bg-num">04</span>
     <div class="head reveal">
-      <div><small>Strategy</small><h2>Let's learn how <br />carty works</h2></div>
+      <div><small>Strategy</small><h2>Let's learn how <br />cardloans works</h2></div>
       <p>Your journey is seamless, safe and secure. No need to register or download apps. No need to enter card details.</p>
     </div>
     <div class="faq">
@@ -188,15 +190,16 @@
 
   <!-- ================= CTA / FOOTER ================= -->
   <footer class="cta">
-    <h2>Connect your finances <br />with Carty</h2>
-    <a href="#apply" class="btn btn-lime">Join Carty Now</a>
-    <a href="#" class="logo foot-logo">carty<span class="dot"></span></a>
+    <h2>Connect your finances <br />with cardloans</h2>
+    <a href="#apply" class="btn btn-lime">Join cardloans Now</a>
+    <a href="#home" class="logo foot-logo">cardloans<span class="dot"></span></a>
     <div class="foot-row">
       <a href="#">Terms &amp; Agreements</a>
-      <span>©2022 Carty All Rights Reserved</span>
+      <span>©2026 cardloans All Rights Reserved</span>
       <a href="#">Privacy Policy</a>
     </div>
   </footer>
+  </main>
 
   <!-- ================= RESULT MODAL ================= -->
   <div class="modal" id="resultModal" aria-hidden="true">
