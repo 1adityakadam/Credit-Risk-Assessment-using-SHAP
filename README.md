@@ -5,6 +5,12 @@ Predicts whether a loan applicant will default, explains why, and serves the res
 **Live demo:** https://cardloans.onrender.com
 (Free Render instance, so the first load may take up to a minute.)
 
+## Demo
+
+[▶ Watch the demo video](assets/demo.mov)
+
+A short walkthrough of the cardloans web app.
+
 ## Key results
 
 The final model was tested on 6,305 loans it never saw during training.
@@ -124,6 +130,7 @@ Open http://127.0.0.1:8000
 | `Credit_Risk.ipynb` | Cleaning, modeling, tuning, MLflow, SHAP |
 | `main.py` | FastAPI app |
 | `static/` | Web interface |
+| `assets/demo.mov` | Demo video |
 | `credit_risk_model.pkl` | Calibrated XGBoost pipeline |
 | `best_threshold.pkl` | Decision threshold (0.76) |
 | `credit_risk_dataset.csv` | Dataset |
