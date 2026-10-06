@@ -7,7 +7,8 @@ Predicts whether a loan applicant will default, explains why, and serves the res
 
 ## Demo
 
-[▶ Watch the demo video](assets/demo.mov)
+https://github.com/user-attachments/assets/fb0f6562-2889-4f29-9611-3e04a38b4338
+
 
 A short walkthrough of the cardloans web app.
 
